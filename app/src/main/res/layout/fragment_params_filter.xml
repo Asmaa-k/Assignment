@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorSurface">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?colorSecondary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back_arrow_white"
+            app:titleTextAppearance="@style/LargeTextAppearance.Bold.White" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/paramsRecyclerview"
+            android:name="com.asmaa.khb.filterapp.ui.ItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/containerAction"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:context=".ui.filters.fragments.CategorySubcategoryFragment"
+            tools:listitem="@layout/item_category_subcategory" />
+
+        <LinearLayout
+            android:id="@+id/containerAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_rectangle_shape_white_strok"
+            android:minHeight="50dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/actionRest"
+                style="@style/MediumTextAppearance.Bold.White"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?colorOnSurface"
+                android:drawableStart="@drawable/icon_close_icon"
+                android:drawablePadding="@dimen/margin_16dp"
+                android:gravity="center|start"
+                android:padding="@dimen/margin_6dp"
+                android:text="@string/text_action_rest_field" />
+
+            <TextView
+                android:id="@+id/actionDone"
+                style="@style/MediumTextAppearance.Bold.White"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:background="?colorAccent"
+                android:gravity="center"
+                android:padding="@dimen/margin_6dp"
+                android:text="@string/text_action_filter" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

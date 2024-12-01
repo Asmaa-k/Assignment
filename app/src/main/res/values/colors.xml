@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PrimaryColor">#FFFFFF</color>
+    <color name="OnPrimaryColor">#000000</color>
+    <color name="SecondaryColor">#0078D7</color>
+    <color name="OnSecondaryColor">#FFFFFF</color>
+    <color name="AccentColor">#A4C639</color>
+    <color name="SurfaceColor">#eeeeee</color>
+    <color name="OnSurfaceColor">#4f4f4f</color>
+    <color name="red">#FF0000</color>
+</resources>

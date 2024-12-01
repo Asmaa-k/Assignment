@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FilterApp</string>
+    <string name="dialog_action_ok">OK</string>
+    <string name="hint_search">Search for category or subcategory</string>
+    <string name="category_toolbar_title">Select Category</string>
+    <string name="subcategory_toolbar_title">Select Subcategory</string>
+    <string name="params_toolbar_title">Filter</string>
+    <string name="text_loading">Loading…</string>
+    <string name="text_label_from">From</string>
+    <string name="text_label_to">To</string>
+    <string name="text_action_done">Done</string>
+    <string name="text_action_cancel">Cancel</string>
+    <string name="text_action_rest">Rest</string>
+    <string name="text_action_filter">Filter Result</string>
+    <string name="text_action_rest_field">Rest Fields</string>
+    <string name="text_action_ok">OK</string>
+</resources>

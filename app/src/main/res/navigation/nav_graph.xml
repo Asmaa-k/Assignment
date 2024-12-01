@@ -1,0 +1,42 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/categoryFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.asmaa.khb.filterapp.ui.filters.fragments.CategorySubcategoryFragment"
+        android:label="fragment_category_subcategory"
+        app:launchSingleTop="true"
+        tools:layout="@layout/fragment_category_subcategory">
+
+        <argument
+            android:name="categoryId"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <argument
+            android:name="categoryLabel"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_categoryToSubcategoryFragment"
+            app:destination="@id/categoryFragment"
+            app:popUpTo="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_paramsFilterFragment"
+            app:destination="@id/paramsFilterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paramsFilterFragment"
+        android:name="com.asmaa.khb.filterapp.ui.filters.fragments.ParamsFilterFragment"
+        android:label="ParamsFilterFragment">
+
+        <argument
+            android:name="subcategoryId"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>

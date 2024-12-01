@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FilterApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/PrimaryColor</item>
+        <item name="colorOnPrimary">@color/OnPrimaryColor</item>
+        <item name="colorSurface">@color/SurfaceColor</item>
+        <item name="colorOnSurface">@color/OnSurfaceColor</item>
+        <item name="android:colorBackground">@color/PrimaryColor</item>
+        <item name="colorOnBackground">@color/OnPrimaryColor</item>
+        <item name="android:colorSecondary">@color/SecondaryColor</item>
+        <item name="colorSecondary">@color/SecondaryColor</item>
+        <item name="colorOnSecondary">@color/OnSecondaryColor</item>
+        <item name="colorAccent">@color/AccentColor</item>
+        <item name="android:colorError">@color/red</item>
+        <item name="errorTextColor">@color/red</item>
+        <item name="colorOnError">@color/red</item>
+    </style>
+
+    <style name="Theme.FilterApp" parent="Base.Theme.FilterApp" />
+</resources>
